@@ -1,23 +1,27 @@
 <template>
   <div id="app">
     <my-head></my-head>
-    <div>
+      <index></index>
       <router-view></router-view>
-    </div>
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
   import MyHead from './components/MyHead/MyHead'
-  
+  import MyFooter from './components/MyFoot/MyFoot'
+  import Index from './view/Index'
+
   export default {
     name: 'App',
     components: {
       MyHead,
+      MyFooter,
+      Index
     }
   }
 </script>
 
-<style>
+<style lang="less">
 
 </style>
